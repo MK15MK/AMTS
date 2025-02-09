@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexMind Tech Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/assets/002.png" type="image/png">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <%- include('includes/navbar') %>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Smart Solutions for <br>a Digital Future</h1>
+            <p>Empowering innovation through cutting-edge technology and seamless solutions.</p>
+            <div class="hero-content">
+                <div class="line"></div>
+                <a href="/about" class="btn-primary">Explore Now
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13v6H8l4 4 4-4h-3V7h-2z" transform="rotate(-90 12 12)"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-icon">
+            <img src="/assets/img1.png" alt="Hero Icon">
+        </div>
+    </section>
+
+    <div class="about">
+        <div class="container">
+            <div class="about-item">
+                <h3>Our Vision</h3>
+                <p>"To be a leading technology solutions provider, empowering businesses to thrive in the digital world with innovative and sustainable tech solutions that drive success and transform industries."</p>
+            </div>
+            <div class="about-item">
+                <h3>Our Mission</h3>
+                <p>At ApexMind Tech Solutions, we are committed to delivering cutting-edge software development, digital marketing, and IT services that meet the unique needs of our clients. Our mission is to foster long-term partnerships, by providing customized, efficient, and cost-effective solutions that enable our clients to stay ahead in a rapidly evolving technological landscape.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="partners">
+        <h2>Our Partner</h2>
+        <div class="partners-container">
+            <div class="partner-item">
+                <img src="/assets/raminteriors.png" alt="Partner 1 Logo">
+                <h3>Ram Interiors</h3>
+            </div>
+            <!-- <div class="partner-item">
+                <img src="/assets/partner2.jpg" alt="Partner 2 Logo">
+                <h3><br>Grain Feast <br> Alliance Pvt Ltd.<br></h3>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="partners">
+        <h2>Our Clients</h2>
+        <div class="partners-container">
+            <div class="partner-item">
+                <img src="/assets/partner1.jpg" alt="Partner 1 Logo">
+                <h3>GESA Marine Container Corporation</h3>
+            </div>
+            <div class="partner-item">
+                <img src="/assets/partner2.jpg" alt="Partner 2 Logo">
+                <h3><br>Grain Feast <br> Alliance Pvt Ltd.<br> <br></h3>
+            </div>
+            <div class="partner-item">
+                <img src="/assets/aadhik.jpg" alt="Partner 2 Logo">
+                <h3>Aadhik Infrastructures & Trading</h3>
+            </div>
+            <div class="partner-item">
+                <img src="/assets/aadhik.jpg" alt="Partner 2 Logo">
+                <h3><br>Aadhik Real Estates</h3>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('includes/footer') %>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.dropdown-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

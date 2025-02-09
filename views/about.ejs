@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/002.png" type="image/png">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <%- include('includes/navbar') %>
+    <div class="about-section">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <div class="colored-bar"></div>
+            <p>We are a passionate team dedicated to delivering innovative solutions and exceptional service. Our mission is to empower businesses by providing cutting-edge technology and creating impactful digital experiences.</p>
+        </div>
+        <div class="about-image">
+            <img src="/assets/aboutus.jpg" alt="About Us Image">
+        </div>
+    </div>
+
+
+    <div class="board-of-directors">
+      <h2>Board of Directors</h2>
+      <div class="directors">
+          <div class="director">
+            <img src="/assets/profile.png" alt="CEO Image">
+              <h3>Shanthosh Raaj <br> M M</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="director">
+              <img src="/assets/profile.png" alt="President Image">
+              <h3>Manoj Kumar S</h3>
+              <p>President & Co-Founder</p>
+          </div>
+      </div>
+  </div>
+  <%- include('includes/footer') %>
+</body>
+</html>

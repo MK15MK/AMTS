@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    color: #3E3EFF;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #3E3EFF;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after, nav a:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.cta {
+    background: linear-gradient(45deg, #3E3EFF, #6A1B9A);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    width: 55%;
+}
+
+.about-content h1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0C0C16;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.colored-bar {
+    width: 100px;
+    height: 5px;
+    background-color: #3E3EFF;
+    margin: 10px 0 20px;
+}
+
+.about-content p {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-image {
+    width: 40%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.board-of-directors {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.board-of-directors h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0C0C16;
+    margin-bottom: 20px;
+}
+
+.directors {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.director {
+    text-align: center;
+    max-width: 250px;
+}
+
+.director img {
+    width: 150px; /* Set the desired size */
+    height: 150px; /* Match the width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures the image is cropped to fit within the circle */
+    object-position: top; /* Moves the focus of the image to the top */
+}
+
+
+.director h3 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0C0C16;
+}
+
+.director p {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.footer {
+    background-color: #0C0C16;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #1A73E8;
+}
+
+.footer-column p {
+    line-height: 1.8;
+}
+
+.footer-column a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-column a:hover {
+    transform: scale(1.1);
+}
+
+.footer-column svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    transition: fill 0.3s ease;
+}
+
+.footer-column svg:hover {
+    fill: #CCCCCC;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .dropdown-menu a {
+        font-size: 1.2rem;
+    }
+}
